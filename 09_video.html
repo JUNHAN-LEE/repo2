@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 동영상</title>
+    <style>
+        video {
+            width: 100%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* 종횡비 315 % 560 = 0.5625*/
+        .player {
+            padding-top: 56.25%;
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+    <video src="" controls></video>
+    
+    <!-- 비디오 파일 가지고 있을 때 -->
+    <video>
+        <source srcset="" media="">
+        <source srcset="" media="">
+        <source srcset="" media="">
+    </video>
+
+    <!-- 동영상을 공유 할 때 -->
+    <div class="player">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZCyyMjIHmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
